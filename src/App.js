@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
+import LandingDisplay from './components/landing-page/LandingDisplay';
 import './App.css';
 
 class App extends Component {
@@ -9,6 +10,9 @@ class App extends Component {
       <Router>
         <div className="App">
           <Navbar />
+          <Switch>
+            <Route exact path="/" component={LandingDisplay} />
+          </Switch>
         </div>
       </Router>
     );

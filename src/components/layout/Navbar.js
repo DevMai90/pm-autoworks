@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class Navbar extends Component {
   render() {
     return (
       <nav className="navbar navbar-dark navbar-expand-md py-3" id="main-nav">
-        <a href="#" className="navbar-brand">
+        <Link to="/" className="navbar-brand">
           <img
             src={require('../../images/pm-logo.png')}
             alt="PM Autoworks"
@@ -16,7 +17,7 @@ class Navbar extends Component {
             }}
             className="rounded img-thumbnail ml-5"
           />
-        </a>
+        </Link>
         <button
           className="navbar-toggler custom-toggler collapsed"
           type="button"
