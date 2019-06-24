@@ -70,8 +70,8 @@ const LandingDisplay = () => {
       <section id="warranty" className="">
         <div className="dark-overlay">
           <div className="row">
-            <div className="col ">
-              <div className="container p-5 text-center">
+            <div className="col">
+              <div className="container py-5">
                 <h2>One-year / 12,000-Mile Warranty</h2>
                 <p className="d-none d-md-block">
                   We believe that auto care should be a hassle-free experience.
@@ -80,6 +80,40 @@ const LandingDisplay = () => {
                   we know that quality parts and services are important to you,
                   we stand behind them with our guarantees.
                 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="yelp">
+        <div className="row">
+          <div className="col">
+            <h1>Yelp TBD</h1>
+          </div>
+        </div>
+      </section>
+
+      <section id="location">
+        <div className="dark-overlay">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-4 mx-auto py-5">
+                <p>
+                  PM Autoworks
+                  <br />
+                  226 Phelan Ave
+                  <br />
+                  San Jose CA 95112
+                  <br />
+                  408-332-1024
+                  <br />
+                  powermotive.autoworks@gmail.com
+                </p>
+              </div>
+              <div className="col-md-8 mx-auto">
+                <h1>Google API</h1>
+                <p>TBD</p>
               </div>
             </div>
           </div>
