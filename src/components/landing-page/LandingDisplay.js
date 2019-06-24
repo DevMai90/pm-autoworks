@@ -23,21 +23,45 @@ const LandingDisplay = () => {
 
         <div className="container">
           <div className="row">
-            <div className="col-md-3 mb-2 text-center">
+            <div className="col-md-6 col-lg-3 mb-2 text-center">
               <i className="fas fa-car fa-3x mb-2" />
               <h3>Maintenance</h3>
+              <img
+                src={require('../../images/maintenance.jpg')}
+                alt=""
+                className="img-fluid rounded mb-3"
+                style={{ maxHeight: '180px' }}
+              />
             </div>
-            <div className="col-md-3 mb-2 text-center">
+            <div className="col-md-6 col-lg-3 mb-2 text-center">
               <i className="fas fa-tools fa-3x mb-2" />
               <h3>Repair</h3>
+              <img
+                src={require('../../images/repair.jpg')}
+                alt=""
+                className="img-fluid rounded mb-3"
+                style={{ maxHeight: '180px' }}
+              />
             </div>
-            <div className="col-md-3 mb-2 text-center">
+            <div className="col-md-6 col-lg-3 mb-2 text-center">
               <i className="fas fa-cogs fa-3x mb-2" />
               <h3>Diagnostics</h3>
+              <img
+                src={require('../../images/diagnostics.jpg')}
+                alt=""
+                className="img-fluid rounded mb-3"
+                style={{ maxHeight: '180px' }}
+              />
             </div>
-            <div className="col-md-3 mb-2 text-center">
+            <div className="col-md-6 col-lg-3 mb-2 text-center">
               <i className="fas fa-fire-alt fa-3x mb-2" />
               <h3>Performance</h3>
+              <img
+                src={require('../../images/performance.jpg')}
+                alt=""
+                className="img-fluid rounded mb-3"
+                style={{ maxHeight: '180px' }}
+              />
             </div>
           </div>
         </div>
@@ -46,10 +70,10 @@ const LandingDisplay = () => {
       <section id="warranty" className="">
         <div className="dark-overlay">
           <div className="row">
-            <div className="col-8 mx-auto">
+            <div className="col ">
               <div className="container p-5 text-center">
-                <h1>One-year / 12,000-Mile Warranty</h1>
-                <p>
+                <h2>One-year / 12,000-Mile Warranty</h2>
+                <p className="d-none d-md-block">
                   We believe that auto care should be a hassle-free experience.
                   We have built trusted customer relationships based on PM
                   Autoworks' reliability and professional service. And because
