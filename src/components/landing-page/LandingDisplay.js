@@ -102,7 +102,7 @@ const LandingDisplay = () => {
                 <p>
                   PM Autoworks
                   <br />
-                  226 Phelan Ave
+                  226 Phelan Ave Ste D
                   <br />
                   San Jose CA 95112
                   <br />

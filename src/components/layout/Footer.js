@@ -9,7 +9,7 @@ const Footer = () => {
             <p>
               PM Autoworks
               <br />
-              226 Phelan Ave
+              226 Phelan Ave Ste D
               <br />
               San Jose CA 95112
             </p>
@@ -27,7 +27,9 @@ const Footer = () => {
           </div>
           <div className="col-sm-4 text-light">
             <p className="mb-0">
-              408-332-1024
+              <a href="tel:1-408-332-1024" className="text-light">
+                408-332-1024
+              </a>
               <br />{' '}
               <a
                 href="mailto:powermotive.autoworks@gmail.com"
@@ -49,7 +51,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fab fa-facebook fa-2x p-2 text-warning" />
+                <i className="fab fa-facebook-f fa-2x p-2 text-warning" />
               </a>
               <a
                 href="https://www.instagram.com/pmautoworks/"
@@ -57,6 +59,15 @@ const Footer = () => {
                 rel="noopener noreferrer"
               >
                 <i className="fab fa-instagram fa-2x p-2 text-warning" />
+              </a>
+              <a href="tel:1-408-332-1024">
+                <i className="fas fa-phone fa-2x p-2 text-warning" />
+              </a>
+              <a
+                href="mailto:powermotive.autoworks@gmail.com"
+                className="text-light"
+              >
+                <i className="far fa-envelope fa-2x p-2 text-warning" />
               </a>
             </span>
           </div>
