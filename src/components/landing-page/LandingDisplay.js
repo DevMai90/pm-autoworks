@@ -1,6 +1,38 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState, useEffect } from 'react';
+import API_KEY from '../../APIKeys';
+import axios from 'axios';
+import YelpReview from './YelpReview';
 
 const LandingDisplay = () => {
+  const [reviews, setReviews] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  const getReviews = async () => {
+    // const bodyParameters = { key: 'value' };
+    const proxyurl = 'https://cors-anywhere.herokuapp.com/';
+    const url =
+      'https://api.yelp.com/v3/businesses/pm-autoworks-subaru-specialist-san-jose-8/reviews';
+    const config = {
+      headers: {
+        Authorization: `Bearer ${API_KEY.yelpAPI}`
+      }
+    };
+
+    try {
+      const res = await axios.get(proxyurl + url, config);
+
+      setReviews(res.data.reviews);
+      setLoading(false);
+    } catch (error) {
+      setLoading(false);
+      console.log(error);
+    }
+  };
+  useEffect(() => {
+    getReviews();
+    // console.log(reviews);
+  }, []);
+
   return (
     <Fragment>
       <div className="image-container">
@@ -87,36 +119,33 @@ const LandingDisplay = () => {
       </section>
 
       <section id="yelp">
-        <div className="row">
-          <div className="col">
-            <h1>Yelp TBD</h1>
-          </div>
-        </div>
-      </section>
-
-      <section id="location">
-        <div className="dark-overlay">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-4 mx-auto py-5">
-                <p>
-                  PM Autoworks
-                  <br />
-                  226 Phelan Ave Ste D
-                  <br />
-                  San Jose CA 95112
-                  <br />
-                  408-332-1024
-                  <br />
-                  powermotive.autoworks@gmail.com
-                </p>
-              </div>
-              <div className="col-md-8 mx-auto">
-                <h1>Google API</h1>
-                <p>TBD</p>
-              </div>
+        <div className="container">
+          <div className="row">
+            <div className="col text-center py-5">
+              <h3>
+                Our Clients <i>Trust</i> Us
+              </h3>
+              <p>
+                We understand that <i>trust</i> is a difficult thing to build
+                and easily lost. Which is why we take pride in our craftsmanship
+                and our strong <i>relationships</i> with our clients. See what
+                others are saying about us on Yelp.
+              </p>
+              <img
+                src={require('../../images/yelp.jpg')}
+                alt="2017-yelp"
+                className="img-fluid"
+              />
             </div>
           </div>
+
+          {!loading && (
+            <div className="row my-5" id="authors">
+              {reviews.map(review => (
+                <YelpReview review={review} key={review.id} />
+              ))}
+            </div>
+          )}
         </div>
       </section>
     </Fragment>

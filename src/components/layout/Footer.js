@@ -5,7 +5,7 @@ const Footer = () => {
     <footer>
       <div className="container p-3">
         <div className="row">
-          <div className="col-sm-4 text-light">
+          <div className="col-md-4 text-light">
             <p>
               PM Autoworks
               <br />
@@ -14,7 +14,7 @@ const Footer = () => {
               San Jose CA 95112
             </p>
           </div>
-          <div className="col-sm-4 text-light">
+          <div className="col-md-4 text-light">
             <p>
               Monday-Friday
               <br />
@@ -25,12 +25,12 @@ const Footer = () => {
               Closed
             </p>
           </div>
-          <div className="col-sm-4 text-light">
+          <div className="col-md-4 text-light">
             <p className="mb-0">
               <a href="tel:1-408-332-1024" className="text-light">
                 408-332-1024
               </a>
-              <br />{' '}
+              <br />
               <a
                 href="mailto:powermotive.autoworks@gmail.com"
                 className="text-light"
