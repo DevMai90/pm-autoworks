@@ -1,4 +1,5 @@
 import React, { Fragment, useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import API_KEY from '../../APIKeys';
 import axios from 'axios';
 import YelpReview from './YelpReview';
@@ -98,7 +99,7 @@ const LandingDisplay = () => {
         </div>
       </section>
 
-      <section id="warranty" className="">
+      <section id="warranty">
         <div className="dark-overlay">
           <div className="row">
             <div className="col">
@@ -158,6 +159,21 @@ const LandingDisplay = () => {
               ))}
             </div>
           )}
+        </div>
+      </section>
+
+      <section id="booking">
+        <div className="dark-overlay">
+          <div className="row">
+            <div className="container">
+              <div className="col p-5">
+                <h3>Schedule Your Appointment Now</h3>
+                <Link to="#">
+                  <button className="btn btn-warning btn-lg">Contact Us</button>
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </Fragment>
