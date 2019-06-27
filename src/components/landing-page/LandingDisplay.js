@@ -8,7 +8,6 @@ const LandingDisplay = () => {
   const [loading, setLoading] = useState(true);
 
   const getReviews = async () => {
-    // const bodyParameters = { key: 'value' };
     const proxyurl = 'https://cors-anywhere.herokuapp.com/';
     const url =
       'https://api.yelp.com/v3/businesses/pm-autoworks-subaru-specialist-san-jose-8/reviews';
@@ -28,6 +27,7 @@ const LandingDisplay = () => {
       console.log(error);
     }
   };
+
   useEffect(() => {
     getReviews();
   }, []);
@@ -134,7 +134,15 @@ const LandingDisplay = () => {
                 <i>
                   <strong>relationships</strong>
                 </i>{' '}
-                with our clients. See what others are saying about us on Yelp.
+                with our clients. See what others are saying about us on{' '}
+                <a
+                  href="https://www.yelp.com/biz/pm-autoworks-subaru-specialist-san-jose-8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Yelp <i className="fab fa-yelp" />
+                </a>
+                .
               </p>
               <img
                 src={require('../../images/yelp.jpg')}

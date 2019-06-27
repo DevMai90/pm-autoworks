@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import PropTypes from 'prop-types';
 import parse from 'html-react-parser';
 
 const YelpReview = ({ review }) => {
@@ -27,8 +28,8 @@ const YelpReview = ({ review }) => {
                 className="img-fluid rounded-circle w-50 mb-3"
               />
               <h2>{name}</h2>
+              <span>{parse(stars)}</span>
               <p>{text}</p>
-              <span className="mb-2">{parse(stars)}</span>
               <a
                 href={url}
                 className="btn btn-warning d-block"
@@ -43,6 +44,10 @@ const YelpReview = ({ review }) => {
       )}
     </Fragment>
   );
+};
+
+YelpReview.propTypes = {
+  review: PropTypes.object.isRequired
 };
 
 export default YelpReview;

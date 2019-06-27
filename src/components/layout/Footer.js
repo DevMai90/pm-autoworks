@@ -16,7 +16,7 @@ const Footer = () => {
           </div>
           <div className="col-md-4 text-light">
             <p>
-              Monday-Friday
+              Monday - Friday
               <br />
               9:00AM - 7:00PM
               <br />
