@@ -30,7 +30,6 @@ const LandingDisplay = () => {
   };
   useEffect(() => {
     getReviews();
-    // console.log(reviews);
   }, []);
 
   return (
@@ -126,10 +125,16 @@ const LandingDisplay = () => {
                 Our Clients <i>Trust</i> Us
               </h3>
               <p>
-                We understand that <i>trust</i> is a difficult thing to build
-                and easily lost. Which is why we take pride in our craftsmanship
-                and our strong <i>relationships</i> with our clients. See what
-                others are saying about us on Yelp.
+                We understand that{' '}
+                <i>
+                  <strong>trust</strong>
+                </i>{' '}
+                is a difficult thing to build and easily lost. Which is why we
+                take pride in our craftsmanship and building strong{' '}
+                <i>
+                  <strong>relationships</strong>
+                </i>{' '}
+                with our clients. See what others are saying about us on Yelp.
               </p>
               <img
                 src={require('../../images/yelp.jpg')}
@@ -138,9 +143,8 @@ const LandingDisplay = () => {
               />
             </div>
           </div>
-
           {!loading && (
-            <div className="row my-5" id="authors">
+            <div className="row py-5" id="authors">
               {reviews.map(review => (
                 <YelpReview review={review} key={review.id} />
               ))}
