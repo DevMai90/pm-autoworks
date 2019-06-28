@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import API_KEY from '../../APIKeys';
 import axios from 'axios';
 import YelpReview from './YelpReview';
+import Spinner from '../layout/Spinner';
 
 const LandingDisplay = () => {
   const [reviews, setReviews] = useState([]);
@@ -166,7 +167,9 @@ const LandingDisplay = () => {
               />
             </div>
           </div>
-          {!loading && (
+          {loading ? (
+            <Spinner />
+          ) : (
             <div className="row py-5" id="authors">
               {reviews.map(review => (
                 <YelpReview review={review} key={review.id} />
