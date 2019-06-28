@@ -20,6 +20,15 @@ body {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 193, 7, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
+/* Dropdown Menu Hover */
+@media (min-width: 768px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+}
+
+/* Landing Page Banner */
 .image-container {
   background-color: #000000;
 }
@@ -51,7 +60,7 @@ body {
 footer {
   background: #000000;
   font-size: 0.8rem;
-  box-shadow: 0px -5px 2px -2px #ffc107;
+  box-shadow: 0px -5px 3px -3px #ffc107;
 }
 
 #authors img {
