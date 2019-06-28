@@ -15,11 +15,12 @@ class Navbar extends Component {
               width: 'auto',
               maxWidth: '100%'
             }}
-            className="rounded img-thumbnail"
+            className="rounded img-thumbnail fadeIn"
           />
         </Link>
+
         <button
-          className="navbar-toggler custom-toggler collapsed"
+          className="navbar-toggler custom-toggler collapsed fadeIn"
           type="button"
           data-toggle="collapse"
           data-target="#navbarCollapse"
@@ -27,7 +28,7 @@ class Navbar extends Component {
           <span className="navbar-toggler-icon" />
         </button>
         <div className="navbar-collapse collapse" id="navbarCollapse">
-          <ul className="navbar-nav ml-auto mr-md-5">
+          <ul className="navbar-nav ml-auto mr-md-5 fadeIn">
             <li className="nav-item dropdown px-2">
               <a
                 href="#"
