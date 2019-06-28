@@ -38,7 +38,7 @@ class Navbar extends Component {
               >
                 Services
               </a>
-              <div className="dropdown-menu bg-dark">
+              <div className="dropdown-menu animate slideIn bg-dark mt-0">
                 <a href="#" className="dropdown-item text-warning">
                   Maintenance
                 </a>
@@ -62,7 +62,7 @@ class Navbar extends Component {
               >
                 About Us
               </a>
-              <div className="dropdown-menu bg-dark">
+              <div className="dropdown-menu animate slideIn bg-dark mt-0">
                 <a href="#" className="dropdown-item text-warning">
                   About The Shop
                 </a>

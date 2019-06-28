@@ -45,7 +45,9 @@ const LandingDisplay = () => {
             <div className="container text-center py-3">
               <h1>Subaru Specialists</h1>
               <p>
-                With over a decade of experience with Subaru, our ASE Certified
+                Established in 2017, PM Autoworks is a professional
+                repair/performance shop specializing in Subaru vehicles. With
+                over a decade of experience with Subaru, our ASE Certified
                 technicians have the knowledge to help you maintain your vehicle
                 in great shape for the road.
               </p>
