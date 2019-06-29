@@ -21,7 +21,7 @@ const YelpReview = ({ review }) => {
       {rating >= 4 && (
         <div className="col-md-4 mx-auto">
           <div className="card mb-3">
-            <div className="card-body text-center">
+            <div className="card-body text-center px-2">
               <img
                 src={image_url}
                 alt=""
@@ -36,7 +36,7 @@ const YelpReview = ({ review }) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                {`See ${name.split(' ')[0]}'s Full Review`}
+                {`${name.split(' ')[0]}'s Full Review`}
               </a>
             </div>
           </div>
