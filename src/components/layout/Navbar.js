@@ -30,54 +30,55 @@ class Navbar extends Component {
         <div className="navbar-collapse collapse" id="navbarCollapse">
           <ul className="navbar-nav ml-auto mr-md-5 fadeIn">
             <li className="nav-item dropdown px-2">
-              <a
+              <Link
+                to="/services"
                 href="#"
                 className="nav-link dropdown-toggle text-warning"
                 role="button"
                 data-toggle="dropdown"
               >
                 Services
-              </a>
+              </Link>
               <div className="dropdown-menu animate slideIn bg-dark mt-0">
-                <a href="#" className="dropdown-item text-warning">
+                <Link to="/services" className="dropdown-item text-warning">
                   Maintenance
-                </a>
-                <a href="#" className="dropdown-item text-warning">
+                </Link>
+                <Link to="/services" className="dropdown-item text-warning">
                   Repair
-                </a>
-                <a href="#" className="dropdown-item text-warning">
+                </Link>
+                <Link to="/services" className="dropdown-item text-warning">
                   Diagnostics
-                </a>
-                <a href="#" className="dropdown-item text-warning">
+                </Link>
+                <Link to="/services" className="dropdown-item text-warning">
                   Performance
-                </a>
+                </Link>
               </div>
             </li>
             <li className="nav-item dropdown px-2">
-              <a
-                href="#"
+              <Link
+                to="/about"
                 className="nav-link dropdown-toggle text-warning"
                 role="button"
                 data-toggle="dropdown"
               >
                 About Us
-              </a>
+              </Link>
               <div className="dropdown-menu animate slideIn bg-dark mt-0">
-                <a href="#" className="dropdown-item text-warning">
+                <Link to="/about" className="dropdown-item text-warning">
                   About The Shop
-                </a>
-                <a href="#" className="dropdown-item text-warning">
+                </Link>
+                <Link to="/about" className="dropdown-item text-warning">
                   Meet The Team
-                </a>
+                </Link>
               </div>
             </li>
             <li className="nav-item px-2">
-              <a
-                href="#"
+              <Link
+                to="/contact"
                 className="nav-link btn btn-outline-warning text-warning px-2"
               >
                 Contact Us
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

@@ -59,9 +59,9 @@ const LandingDisplay = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-6 col-lg-3 mb-2 text-center">
-              <a href="#">
+              <Link to="/services">
                 <i className="circle-icon fas fa-car fa-3x" />
-              </a>
+              </Link>
               <h3>Maintenance</h3>
               <img
                 src={require('../../images/maintenance.jpg')}
@@ -71,9 +71,9 @@ const LandingDisplay = () => {
               />
             </div>
             <div className="col-md-6 col-lg-3 mb-2 text-center">
-              <a href="#">
+              <Link to="/services">
                 <i className="circle-icon fas fa-tools fa-3x" />
-              </a>
+              </Link>
               <h3>Repair</h3>
               <img
                 src={require('../../images/repair.jpg')}
@@ -83,9 +83,9 @@ const LandingDisplay = () => {
               />
             </div>
             <div className="col-md-6 col-lg-3 mb-2 text-center">
-              <a href="#">
+              <Link to="/services">
                 <i className="circle-icon fas fa-cogs fa-3x" />
-              </a>
+              </Link>
               <h3>Diagnostics</h3>
               <img
                 src={require('../../images/diagnostics.jpg')}
@@ -95,9 +95,9 @@ const LandingDisplay = () => {
               />
             </div>
             <div className="col-md-6 col-lg-3 mb-2 text-center">
-              <a href="#">
+              <Link to="/services">
                 <i className="circle-icon fas fa-fire-alt fa-3x" />
-              </a>
+              </Link>
               <h3>Performance</h3>
               <img
                 src={require('../../images/performance.jpg')}
