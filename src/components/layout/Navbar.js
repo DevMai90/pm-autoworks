@@ -44,7 +44,7 @@ class Navbar extends Component {
                   Maintenance
                 </Link>
                 <Link to="/services" className="dropdown-item text-warning">
-                  Repair
+                  Repairs
                 </Link>
                 <Link to="/services" className="dropdown-item text-warning">
                   Diagnostics
