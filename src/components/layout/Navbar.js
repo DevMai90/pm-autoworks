@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 
 class Navbar extends Component {
   render() {
@@ -32,7 +32,6 @@ class Navbar extends Component {
             <li className="nav-item dropdown px-2">
               <Link
                 to="/services"
-                href="#"
                 className="nav-link dropdown-toggle text-warning"
                 role="button"
                 data-toggle="dropdown"
@@ -43,13 +42,22 @@ class Navbar extends Component {
                 <Link to="/services" className="dropdown-item text-warning">
                   Maintenance
                 </Link>
-                <Link to="/services" className="dropdown-item text-warning">
+                <Link
+                  to="/services#repairs"
+                  className="dropdown-item text-warning"
+                >
                   Repairs
                 </Link>
-                <Link to="/services" className="dropdown-item text-warning">
+                <Link
+                  to="/services#diagnostics"
+                  className="dropdown-item text-warning"
+                >
                   Diagnostics
                 </Link>
-                <Link to="/services" className="dropdown-item text-warning">
+                <Link
+                  to="/services#performance"
+                  className="dropdown-item text-warning"
+                >
                   Performance
                 </Link>
               </div>
