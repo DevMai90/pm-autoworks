@@ -1,4 +1,5 @@
-import React, { Fragment } from 'react';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const ServicesDisplay = () => {
   return (
@@ -28,6 +29,13 @@ const ServicesDisplay = () => {
                   <a href="#performance" className="text-dark p-2">
                     Performance
                   </a>
+                  <Link
+                    to="/contact"
+                    className="btn btn-warning p-2"
+                    // style={{ backgroundColor: '#000000' }}
+                  >
+                    Contact Us
+                  </Link>
                 </div>
               </div>
             </div>

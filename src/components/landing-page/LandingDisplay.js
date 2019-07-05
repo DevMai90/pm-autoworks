@@ -1,5 +1,5 @@
 import React, { Fragment, useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import API_KEY from '../../APIKeys';
 import axios from 'axios';
 import YelpReview from './YelpReview';
@@ -71,10 +71,10 @@ const LandingDisplay = () => {
               />
             </div>
             <div className="col-md-6 col-lg-3 mb-2 text-center">
-              <Link to="/services">
+              <Link to="/services#repairs">
                 <i className="circle-icon fas fa-tools fa-3x" />
               </Link>
-              <h3>Repair</h3>
+              <h3>Repairs</h3>
               <img
                 src={require('../../images/repair.jpg')}
                 alt=""
@@ -83,7 +83,7 @@ const LandingDisplay = () => {
               />
             </div>
             <div className="col-md-6 col-lg-3 mb-2 text-center">
-              <Link to="/services">
+              <Link to="/services#diagnostics">
                 <i className="circle-icon fas fa-cogs fa-3x" />
               </Link>
               <h3>Diagnostics</h3>
@@ -95,7 +95,7 @@ const LandingDisplay = () => {
               />
             </div>
             <div className="col-md-6 col-lg-3 mb-2 text-center">
-              <Link to="/services">
+              <Link to="/services#performance">
                 <i className="circle-icon fas fa-fire-alt fa-3x" />
               </Link>
               <h3>Performance</h3>
