@@ -60,6 +60,13 @@ const Footer = () => {
               >
                 <i className="fab fa-instagram fa-2x p-2 text-warning" />
               </a>
+              <a
+                href="https://www.youtube.com/channel/UClk2wEZ8TBgXkPnIuImkhiQ"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fab fa-youtube fa-2x p-2 text-warning" />
+              </a>
               <a href="tel:1-408-332-1024">
                 <i className="fas fa-phone fa-2x p-2 text-warning" />
               </a>
