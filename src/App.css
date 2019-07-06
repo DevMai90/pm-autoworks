@@ -132,6 +132,10 @@ body {
   color: #fff;
 }
 
+#gallery img:hover {
+  cursor: pointer;
+}
+
 footer {
   background: #000000;
   font-size: 0.8rem;

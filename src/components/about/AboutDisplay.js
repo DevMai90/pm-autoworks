@@ -1,4 +1,5 @@
 import React from 'react';
+import AboutLightbox from './AboutLightbox';
 
 const AboutDisplay = () => {
   return (
@@ -38,6 +39,10 @@ const AboutDisplay = () => {
             </p>
           </div>
         </div>
+
+        <section id="gallery">
+          <AboutLightbox />
+        </section>
       </div>
     </div>
   );

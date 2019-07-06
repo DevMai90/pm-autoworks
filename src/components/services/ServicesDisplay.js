@@ -13,7 +13,9 @@ const ServicesDisplay = () => {
           <div className="col-md-3 d-none d-md-block">
             <div className="card border-warning sticky-top">
               <div className="card-header bg-dark text-warning">
-                <h3>Services</h3>
+                <a href="#main-nav" className="text-warning">
+                  <h3>Services</h3>
+                </a>
               </div>
               <div className="card-body">
                 <div className="d-flex flex-column">
