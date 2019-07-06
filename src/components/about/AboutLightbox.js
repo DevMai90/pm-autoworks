@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react';
+import React, { useState } from 'react';
 import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css';
 
@@ -42,7 +42,7 @@ const AboutLightbox = () => {
     );
   });
   return (
-    <Fragment>
+    <section id="gallery">
       <div className="row">{displayImages}</div>
 
       {isOpen && (
@@ -60,7 +60,7 @@ const AboutLightbox = () => {
           imageCaption={images[photoIndex][1]}
         />
       )}
-    </Fragment>
+    </section>
   );
 };
 
