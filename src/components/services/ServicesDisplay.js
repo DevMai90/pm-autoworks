@@ -29,11 +29,7 @@ const ServicesDisplay = () => {
                   <a href="#performance" className="text-dark p-2">
                     Performance
                   </a>
-                  <Link
-                    to="/contact"
-                    className="btn btn-warning p-2"
-                    // style={{ backgroundColor: '#000000' }}
-                  >
+                  <Link to="/contact" className="btn btn-warning p-2">
                     Contact Us
                   </Link>
                 </div>
@@ -213,7 +209,6 @@ const ServicesDisplay = () => {
                   <h3>Performance Upgrades</h3>
                 </div>
                 <div className="card-body">
-                  <p>Mo' powah baby</p>
                   <h4>Engine Upgrades</h4>
                   <ul>
                     <li>
