@@ -9,9 +9,9 @@ const AboutDisplay = () => {
       </div>
 
       <div className="container">
-        <div className="row">
-          <div className="col-md-10 mx-auto">
-            <section id="about">
+        <section id="about">
+          <div className="row">
+            <div className="col-md-12 mx-auto">
               <h3>About The Shop</h3>
               <p>
                 Established in 2017, PM Autoworks was founded by family members
@@ -33,18 +33,21 @@ const AboutDisplay = () => {
               </figure>
               <p>
                 Through the wonderful connections we've made and with great
-                support from our peers, <strong>our dreams came true</strong>{' '}
+                support from our peers,{' '}
+                <strong>
+                  <i>our dreams came true</i>
+                </strong>{' '}
                 when we opened the doors to PM Autoworks in the heart of San
                 Jose. Now, we can express our passion through our clients and
                 the cars that you all bring in.
               </p>
-            </section>
-
-            <section id="gallery">
-              <AboutLightbox />
-            </section>
+            </div>
           </div>
-        </div>
+        </section>
+
+        <section id="gallery">
+          <AboutLightbox />
+        </section>
       </div>
     </div>
   );

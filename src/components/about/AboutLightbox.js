@@ -7,21 +7,21 @@ const AboutLightbox = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const images = [
-    require('../../images/lightbox/office-1.jpg'),
-    require('../../images/lightbox/office-2.jpg'),
-    require('../../images/lightbox/shop-2.jpg'),
-    require('../../images/lightbox/shop-3.jpg'),
-    require('../../images/lightbox/shop-4.jpg'),
-    require('../../images/lightbox/shop-5.jpg')
-  ];
-
-  const imageCaptions = [
-    'Reception desk',
-    'Lounge area with snacks and mini-fridge',
-    'Three 4-post lifts full as usual',
-    'Shop entrance sign',
-    'Ricky hard at work',
-    'Peter preparing for a track day'
+    [require('../../images/lightbox/office-1.jpg'), 'Reception desk area'],
+    [
+      require('../../images/lightbox/office-2.jpg'),
+      'Lounge area with snacks and mini-fridge'
+    ],
+    [
+      require('../../images/lightbox/shop-2.jpg'),
+      'Three 4-post lifts full as usual'
+    ],
+    [require('../../images/lightbox/shop-3.jpg'), 'Entrance to the shop'],
+    [require('../../images/lightbox/shop-4.jpg'), 'Ricky hard at work'],
+    [
+      require('../../images/lightbox/shop-5.jpg'),
+      'Peter preparing for a track day'
+    ]
   ];
 
   const onImageClick = index => {
@@ -31,9 +31,9 @@ const AboutLightbox = () => {
 
   const displayImages = images.map((image, index) => {
     return (
-      <div className="col-md-4" key={index}>
+      <div className="col-sm-6 col-lg-4" key={index}>
         <img
-          src={image}
+          src={image[0]}
           alt=""
           className="img-fluid p-2"
           onClick={() => onImageClick(index)}
@@ -43,15 +43,13 @@ const AboutLightbox = () => {
   });
   return (
     <Fragment>
-      <div className="container">
-        <div className="row">{displayImages}</div>
-      </div>
+      <div className="row">{displayImages}</div>
 
       {isOpen && (
         <Lightbox
-          mainSrc={images[photoIndex]}
-          nextSrc={images[(photoIndex + 1) % images.length]}
-          prevSrc={images[(photoIndex + images.length - 1) % images.length]}
+          mainSrc={images[photoIndex][0]}
+          nextSrc={images[(photoIndex + 1) % images.length][0]}
+          prevSrc={images[(photoIndex + images.length - 1) % images.length][0]}
           onCloseRequest={() => setIsOpen(false)}
           onMovePrevRequest={() =>
             setPhotoIndex((photoIndex + images.length - 1) % images.length)
@@ -59,7 +57,7 @@ const AboutLightbox = () => {
           onMoveNextRequest={() =>
             setPhotoIndex((photoIndex + 1) % images.length)
           }
-          imageCaption={imageCaptions[photoIndex]}
+          imageCaption={images[photoIndex][1]}
         />
       )}
     </Fragment>
