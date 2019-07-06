@@ -15,6 +15,15 @@ const AboutLightbox = () => {
     require('../../images/lightbox/shop-5.jpg')
   ];
 
+  const imageCaptions = [
+    'Reception desk',
+    'Lounge area with snacks and mini-fridge',
+    'Three 4-post lifts full as usual',
+    'Shop entrance sign',
+    'Ricky hard at work',
+    'Peter preparing for a track day'
+  ];
+
   const onImageClick = index => {
     setIsOpen(true);
     setPhotoIndex(index);
@@ -50,6 +59,7 @@ const AboutLightbox = () => {
           onMoveNextRequest={() =>
             setPhotoIndex((photoIndex + 1) % images.length)
           }
+          imageCaption={imageCaptions[photoIndex]}
         />
       )}
     </Fragment>
