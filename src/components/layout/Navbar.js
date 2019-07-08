@@ -75,7 +75,7 @@ class Navbar extends Component {
                 <Link to="/about" className="dropdown-item text-warning">
                   About The Shop
                 </Link>
-                <Link to="/about" className="dropdown-item text-warning">
+                <Link to="/about#team" className="dropdown-item text-warning">
                   Meet The Team
                 </Link>
               </div>

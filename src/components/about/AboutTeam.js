@@ -7,21 +7,21 @@ const AboutTeam = () => {
       name: 'Peter Bon',
       title: 'Founder',
       about:
-        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus modi temporibus beatae expedita autem quis non nostrum culpa, minima magni deleniti obcaecati enim ipsa voluptate aliquid quibusdam ad atque commodi, accusamus officiis sequi? Assumenda corporis provident totam ad laboriosam voluptates perferendis nesciunt exercitationem, velit accusamus, animi, repellat architecto et hic?',
+        'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem quibusdam, sunt nostrum vel fugit nesciunt voluptas! Excepturi natus praesentium porro, consequuntur quae cupiditate, fugiat magni nemo fuga commodi provident quas!',
       avatar: 'peter.jpg'
     },
     {
       name: 'Ricky Hogan',
       title: 'Founder',
       about:
-        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus modi temporibus beatae expedita autem quis non nostrum culpa, minima magni deleniti obcaecati enim ipsa voluptate aliquid quibusdam ad atque commodi, accusamus officiis sequi? Assumenda corporis provident totam ad laboriosam voluptates perferendis nesciunt exercitationem, velit accusamus, animi, repellat architecto et hic?',
+        'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem quibusdam, sunt nostrum vel fugit nesciunt voluptas! Excepturi natus praesentium porro, consequuntur quae cupiditate, fugiat magni nemo fuga commodi provident quas!',
       avatar: 'ricky.jpg'
     },
     {
       name: 'Anthony Heng',
       title: 'Founder',
       about:
-        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus modi temporibus beatae expedita autem quis non nostrum culpa, minima magni deleniti obcaecati enim ipsa voluptate aliquid quibusdam ad atque commodi, accusamus officiis sequi? Assumenda corporis provident totam ad laboriosam voluptates perferendis nesciunt exercitationem, velit accusamus, animi, repellat architecto et hic?',
+        'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem quibusdam, sunt nostrum vel fugit nesciunt voluptas! Excepturi natus praesentium porro, consequuntur quae cupiditate, fugiat magni nemo fuga commodi provident quas!',
       avatar: 'anthony.jpg'
     }
   ];
@@ -50,7 +50,7 @@ const AboutTeam = () => {
           </p>
         </div>
       </div>
-      <div className="row">{foundersDisplay}</div>
+      <div className="row py-2">{foundersDisplay}</div>
     </section>
   );
 };
