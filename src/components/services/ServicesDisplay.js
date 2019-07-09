@@ -3,6 +3,7 @@ import ServicesSidebar from './ServicesSidebar';
 import ServicesMaintenance from './ServicesMaintenance';
 import ServicesRepairs from './ServicesRepairs';
 import ServicesDiagnostics from './ServicesDiagnostics';
+import ServicesPerformance from './ServicesPerformance';
 
 const ServicesDisplay = () => {
   return (
@@ -20,6 +21,7 @@ const ServicesDisplay = () => {
             <ServicesMaintenance />
             <ServicesRepairs />
             <ServicesDiagnostics />
+            <ServicesPerformance />
           </div>
         </div>
       </div>

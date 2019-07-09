@@ -7,7 +7,7 @@ const AboutDisplay = () => {
   return (
     <div>
       <div className="image-container mb-3">
-        <img src={require('../../images/about-banner.jpg')} alt="" />
+        <img src={require('../../images/banners/about-banner.jpg')} alt="" />
       </div>
 
       <div className="container">

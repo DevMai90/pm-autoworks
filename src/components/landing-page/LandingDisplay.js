@@ -37,7 +37,7 @@ const LandingDisplay = () => {
   return (
     <Fragment>
       <div className="image-container">
-        <img src={require('../../images/landing-banner.png')} alt="" />
+        <img src={require('../../images/banners/landing-banner.png')} alt="" />
       </div>
 
       <section id="landing-header">
@@ -185,7 +185,7 @@ const LandingDisplay = () => {
             <div className="container">
               <div className="col p-5">
                 <h3>Schedule Your Appointment Now</h3>
-                <Link to="#">
+                <Link to="/contact">
                   <button className="btn btn-warning btn-lg" type="button">
                     Contact Us
                   </button>

@@ -142,7 +142,11 @@ body {
   width: auto;
   min-width: 136px;
 }
+/* Contact */
 
+#map {
+  height: 100%;
+}
 footer {
   background: #000000;
   font-size: 0.8rem;

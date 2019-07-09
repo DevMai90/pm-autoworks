@@ -4,6 +4,7 @@ import Navbar from './components/layout/Navbar';
 import LandingDisplay from './components/landing-page/LandingDisplay';
 import ServicesDisplay from './components/services/ServicesDisplay';
 import AboutDisplay from './components/about/AboutDisplay';
+import ContactDisplay from './components/contact/ContactDisplay';
 import Footer from './components/layout/Footer';
 import './App.css';
 
@@ -17,6 +18,7 @@ class App extends Component {
             <Route exact path="/" component={LandingDisplay} />
             <Route exact path="/services" component={ServicesDisplay} />
             <Route exact path="/about" component={AboutDisplay} />
+            <Route exact path="/contact" component={ContactDisplay} />
           </Switch>
           <Footer />
         </div>
