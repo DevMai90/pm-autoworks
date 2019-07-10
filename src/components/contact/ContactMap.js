@@ -1,22 +1,22 @@
-import React, { Component } from 'react';
+import React, { useEffect } from 'react';
 import API_KEY from '../../APIKeys';
 
-class ContactMap extends Component {
-  componentDidMount() {
-    this.renderMap();
-  }
+const ContactMap = () => {
+  useEffect(() => {
+    renderMap();
+  });
 
-  renderMap = () => {
+  const renderMap = () => {
     loadScript(
       `https://maps.googleapis.com/maps/api/js?key=${
         API_KEY.mapAPI
       }&callback=initMap`
     );
 
-    window.initMap = this.initMap;
+    window.initMap = initMap;
   };
 
-  initMap = () => {
+  const initMap = () => {
     const location = { lat: 37.3121774, lng: -121.868332 };
     // Prepend window so that we can access google
     const map = new window.google.maps.Map(document.getElementById('map'), {
@@ -31,6 +31,7 @@ class ContactMap extends Component {
       title: 'PM Autoworks'
     });
 
+    // Open new window to Google Maps
     marker.addListener('click', () =>
       window.open(
         'https://www.google.com/maps/place/PM+Autoworks+Subaru+Specialist/@37.3121774,-121.868332,17z/data=!4m12!1m6!3m5!1s0x808e33236795199f:0xad89a70479f3d012!2sPM+Autoworks+Subaru+Specialist!8m2!3d37.3121774!4d-121.8661433!3m4!1s0x808e33236795199f:0xad89a70479f3d012!8m2!3d37.3121774!4d-121.8661433',
@@ -38,10 +39,9 @@ class ContactMap extends Component {
       )
     );
   };
-  render() {
-    return <div id="map" style={{ height: '100vh' }} />;
-  }
-}
+
+  return <div id="map" style={{ height: '100vh' }} />;
+};
 
 const loadScript = url => {
   // Reference for FIRST script tag
