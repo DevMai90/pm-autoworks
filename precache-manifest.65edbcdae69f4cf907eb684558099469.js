@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "840e79b4151685d4b0439c3a6cb00dd7",
+    "revision": "8ea7ca7e081466695c5d01aed64d5192",
     "url": "/pm-autoworks/index.html"
   },
   {
-    "revision": "af0ae83e899d8d174e3a",
+    "revision": "4317923f6cd231c65873",
     "url": "/pm-autoworks/static/css/2.9522b9fe.chunk.css"
   },
   {
-    "revision": "e5cc86981ec21ecdb21a",
-    "url": "/pm-autoworks/static/css/main.1ffadbe4.chunk.css"
+    "revision": "c1a56223b8de555e4aee",
+    "url": "/pm-autoworks/static/css/main.ff29131b.chunk.css"
   },
   {
-    "revision": "af0ae83e899d8d174e3a",
-    "url": "/pm-autoworks/static/js/2.bf8ffd90.chunk.js"
+    "revision": "4317923f6cd231c65873",
+    "url": "/pm-autoworks/static/js/2.58a6e813.chunk.js"
   },
   {
-    "revision": "e5cc86981ec21ecdb21a",
-    "url": "/pm-autoworks/static/js/main.1c10f22f.chunk.js"
+    "revision": "c1a56223b8de555e4aee",
+    "url": "/pm-autoworks/static/js/main.e3e175bf.chunk.js"
   },
   {
     "revision": "0c5108f3d1f32babc615",
@@ -26,6 +26,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "0ef0cbfe087a895aa9a5ad4d08914c36",
     "url": "/pm-autoworks/static/media/about-banner.0ef0cbfe.jpg"
+  },
+  {
+    "revision": "adab8c7f38b6f95966d1e4ccc652341e",
+    "url": "/pm-autoworks/static/media/anthony.adab8c7f.jpg"
+  },
+  {
+    "revision": "e8488387ab819d803ecb8d1cdf347489",
+    "url": "/pm-autoworks/static/media/contact-banner.e8488387.jpg"
   },
   {
     "revision": "7f4476396207c50aa6fc5b52dad7ef24",
@@ -56,12 +64,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pm-autoworks/static/media/performance.459409ce.jpg"
   },
   {
+    "revision": "caf5c7ed22e087d07912020c48c76e59",
+    "url": "/pm-autoworks/static/media/peter.caf5c7ed.jpg"
+  },
+  {
     "revision": "3fccd1fb290171054013d66c9067179f",
     "url": "/pm-autoworks/static/media/pm-logo.3fccd1fb.png"
   },
   {
     "revision": "acb37bf2126491d2b6234f6bb8fef2bb",
     "url": "/pm-autoworks/static/media/repair.acb37bf2.jpg"
+  },
+  {
+    "revision": "451bf4959ed719a81234f574a697e336",
+    "url": "/pm-autoworks/static/media/ricky.451bf495.jpg"
   },
   {
     "revision": "c3ae952e6aa880d2cb91c4e7e79b752b",
