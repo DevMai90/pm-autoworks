@@ -21,7 +21,7 @@ const ContactMap = () => {
     // Prepend window so that we can access google
     const map = new window.google.maps.Map(document.getElementById('map'), {
       center: location,
-      zoom: 14
+      zoom: 17
     });
 
     // Add marker to map
@@ -40,18 +40,18 @@ const ContactMap = () => {
     );
   };
 
-  return <div id="map" style={{ height: '100vh' }} />;
-};
+  const loadScript = url => {
+    // Reference for FIRST script tag
+    const index = window.document.getElementsByTagName('script')[0];
+    const script = window.document.createElement('script');
+    script.src = url;
+    script.async = true;
+    script.defer = true;
+    // Find parent node of the first script. Then insert our new script first.
+    index.parentNode.insertBefore(script, index);
+  };
 
-const loadScript = url => {
-  // Reference for FIRST script tag
-  const index = window.document.getElementsByTagName('script')[0];
-  const script = window.document.createElement('script');
-  script.src = url;
-  script.async = true;
-  script.defer = true;
-  // Find parent node of the first script. Then insert our new script first.
-  index.parentNode.insertBefore(script, index);
+  return <div id="map" style={{ height: '50vh' }} />;
 };
 
 export default ContactMap;
