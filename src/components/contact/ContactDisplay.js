@@ -8,6 +8,11 @@ const ContactDisplay = () => {
     <div style={{ background: '#000000' }}>
       <div className="image-container">
         <img src={require('../../images/banners/contact-banner.jpg')} alt="" />
+        <div className="centered">
+          <h2 className="display-2 fadeIn">
+            <strong>Contact Us</strong>
+          </h2>
+        </div>
       </div>
 
       <section id="contact-info">

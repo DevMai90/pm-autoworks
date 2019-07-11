@@ -38,6 +38,11 @@ const LandingDisplay = () => {
     <Fragment>
       <div className="image-container">
         <img src={require('../../images/banners/landing-banner.png')} alt="" />
+        <div className="centered">
+          <h2 className="display-2 fadeIn">
+            <strong>PM Autoworks</strong>
+          </h2>
+        </div>
       </div>
 
       <section id="landing-header">

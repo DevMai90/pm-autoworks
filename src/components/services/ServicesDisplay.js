@@ -10,6 +10,11 @@ const ServicesDisplay = () => {
     <div style={{ background: '#000000' }}>
       <div className="image-container mb-3">
         <img src={require('../../images/services.jpg')} alt="" />
+        <div className="centered">
+          <h2 className="display-2 fadeIn">
+            <strong>Services</strong>
+          </h2>
+        </div>
       </div>
 
       <div className="container">
