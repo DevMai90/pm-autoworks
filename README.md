@@ -1,68 +1,28 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## PM Autoworks
 
-## Available Scripts
+This is a front-end project for a an automotive repairshop located in San Jose.
 
-In the project directory, you can run:
+## Motivation
 
-### `npm start`
+The purpose of this app was to get myself familiarized with building a front-end web app and integrate third party APIs where it is appropriate.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The end goal is to have an improved website that PM Autoworks can use compared to their existing website. An improved website will improve foot traffic to their shop.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+### Learning Points
 
-### `npm test`
+This project brought me out of Bootstrap 4's comfort zone as I had to learn customized CSS to achieve certain visual goals. Some of these items include using keyframes, media queries, overlays, and resizing images.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+I used third party APIs provided by Yelp and Google to collect information related to the business and display it. This required me to carefully read through their documenation. However, I realized that documentations may not be 100% step-by-step as I found out about the Google Maps JavaScript API. Since my app is built on React, I had to find out how to load a script that takes in an API key and use a callback function.
 
-### `npm run build`
+I also used several libraries to help me when needed. This was quite a learning experience as I quickly realized that not all libraries are equal. Some libraries are well documented and maintained while others have halfway completed documentation requiring me to fill in the gaps.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Built With:
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- ReactJS - JavaScript library for building user interfaces
+- Bootstrap 4 - CSS Framework
+- Axios - Promise based HTTP client for the browser
+- Yelp Fusion API - REST API to collect business information
+- Google Maps JavaScript API - Customizable map content
+- React Image Lightbox - A flexible lightbox component for displaying images in a React project
+- HTML React Parser - Converts an HTML string to one or more React elements
+- GitHub Pages - Static web publishing directly from GitHub repository
