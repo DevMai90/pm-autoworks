@@ -9,10 +9,7 @@ const AboutDisplay = () => {
       <div className="image-container mb-3">
         <img src={require('../../images/banners/about-banner.jpg')} alt="" />
         <div className="centered">
-          <h2
-            className="display-2 text-white fadeIn"
-            style={{ fontSize: '48px', textDecoration: 'underline #ffc107' }}
-          >
+          <h2 className="display-2 text-white fadeIn">
             <strong>About Us</strong>
           </h2>
         </div>
