@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8ea7ca7e081466695c5d01aed64d5192",
+    "revision": "724f2d23645214b8e1f63b585636283c",
     "url": "/pm-autoworks/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pm-autoworks/static/css/2.9522b9fe.chunk.css"
   },
   {
-    "revision": "c1a56223b8de555e4aee",
+    "revision": "e62e43b0bc97dc88d61f",
     "url": "/pm-autoworks/static/css/main.ff29131b.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pm-autoworks/static/js/2.58a6e813.chunk.js"
   },
   {
-    "revision": "c1a56223b8de555e4aee",
-    "url": "/pm-autoworks/static/js/main.e3e175bf.chunk.js"
+    "revision": "e62e43b0bc97dc88d61f",
+    "url": "/pm-autoworks/static/js/main.2ee745f2.chunk.js"
   },
   {
     "revision": "0c5108f3d1f32babc615",
