@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://devmai90.github.io/pm-autoworks/",
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "gh-pages": "^2.0.1",
     "html-react-parser": "^0.8.0",
     "react": "^16.8.6",
